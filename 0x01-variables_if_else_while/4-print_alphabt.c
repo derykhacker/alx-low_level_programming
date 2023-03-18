@@ -2,25 +2,24 @@
 
 #include <stdio.h>
 
-#include <time.h>
+#include <string.h>
 
 /**
  * main - Entry point
  *
- * Return: Always success
+ * Return: Always 0 (success)
  */
 
 
 int main(void)
 {
-	char low, e, q;
-	e = 'e';
-	q = 'q';
-	for (low = 'a'; low <= 'z'; low++;
+	int i;
+	for (i = 97; i < 123; ++;
 	{
-	if (low != e && low != q)
-	putchar(low);
-	}
+	if (i != 101 && i != 113)
+		{
+		putchar(i);
+		}
 	putchar('\n');
 	return (0);
 }
